@@ -1,0 +1,40 @@
+/* General styles for the button */
+.rounded-button {
+    background-color: #e39797; /* Base color */
+    color: white; /* White text */
+    padding: 75px 166px; /* Large button size */
+    font-size: 24px; /* Larger text */
+    border: none; /* Remove default border */
+    border-radius: 12px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */ 
+    margin: 15px 0; /* Add vertical spacing between buttons */
+}
+
+/* Hover effect */
+.rounded-button:hover {
+    background-color: #c37676; /* Darker version for hover */
+}
+
+/* Active (press) effect */
+.rounded-button:active {
+    transform: scale(0.95); /* Slightly shrink the button */
+    background-color: #a86161; /* Even darker version for active */
+}
+
+/* Center the button container */
+body {
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default body margin */
+    background-color: #f0f0f0; /* Light background for better contrast */
+}
+
+/* Make the buttons stack vertically */
+.button-container {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center buttons horizontally */
+}
