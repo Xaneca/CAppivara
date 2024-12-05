@@ -1,0 +1,30 @@
+/* General styles for the button */
+.rounded-button {
+    background-color: red; /* Base color */
+    color: white; /* White text */
+    padding: 75px 170px; /* Large button size */
+    font-size: 24px; /* Larger text */
+    border: none; /* Remove default border */
+    border-radius: 24px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: transform 0.2s ease, background-color 0.3s; /* Transição suave */
+    margin: 0px;
+    transform-origin: center; /* Define o centro como ponto de transformação */
+}
+
+/* Center the button container */
+body {
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; 
+    height: 100vh; /* Full viewport height */
+    width: 100%;   /* Certifique-se de ocupar toda a largura */
+    margin: 0; /* Remove default body margin */
+    background-color: #f0f0f0; /* Light background for better contrast */
+}
+
+/* Make the buttons stack vertically */
+.rounded-button {
+    pointer-events: none; /* Bloqueia cliques e interações */
+    cursor: not-allowed; /* Mostra o cursor de bloqueio */
+}
