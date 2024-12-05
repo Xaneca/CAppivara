@@ -5,7 +5,8 @@ import cazinha from '../assets/cazinha_icon.png';
 import maozinha from '../assets/maozinha_icon.png';
 import icon_main from '../assets/icon_main.svg';
 import person from '../assets/person_incon.png';
-import retangulo from '../assets/retangulo_cazinha.png'
+import retangulo from '../assets/retangulo_cazinha.png';
+import logo from '../assets/logo_voluncenter.png';
 
 export default {
     adav,
@@ -15,5 +16,6 @@ export default {
     maozinha,
     icon_main,
     person,
-    retangulo
+    retangulo,
+    logo
 };
