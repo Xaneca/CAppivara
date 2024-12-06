@@ -1,6 +1,7 @@
 import { images } from '~/constants'; // Certifique-se de que está correto
 import "~/pages/page_2/page_2.css";
 
+
 export default function HomePage() {
     return (
         <div className="container">
@@ -23,9 +24,15 @@ export default function HomePage() {
 
             {/* Footer Navigation */}
             <div className="footer">
-                <img src={images.cazinha} alt="Home page" width = "40"/>
-                <img src={images.maozinha} alt="Voluntariados" />
-                <img src={images.person} alt="Perfil" />
+                <a href="../home">
+                    <img src={images.cazinha} alt="Home page" />
+                </a>
+                <a href="./home">
+                    <img src={images.maozinha} alt="Voluntariados" />
+                </a>
+                <a href="../home">
+                    <img src={images.person} alt="Perfil" />
+                </a>
             </div>
         </div>
     );
