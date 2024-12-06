@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação de Telefone</title>
+    <link rel="stylesheet" href="page_six.css">
+</head>
+<body>
+    <div class="phone">
+        <div class="screen">
+            <h1 class="title_header">Liga portuguesa contra o cancro</h1>
+            <p>13 - 14 Novembro</p>
+            <p class="text_subscribe">Inscrever Turno:</p>
+            <div class="schedules">
+                <div class="date">13 Novembro</div>
+                <div class="date_options">
+                    <div class="schedules_position">
+                        <div>09:00 - 10:00</div>
+                        <button class="circle" id="circle1"><img src="../../assets/empty_circle.png"></button>
+                    </div>
+                    <div class="schedules_position">
+                        <div>10:00 - 11:00</div>
+                        <button class="circle" id="circle1"><img src="../../assets/empty_circle.png"></button>
+                    </div>
+                    <div class="schedules_position">
+                        <div>11:00 - 12:00</div>
+                        <button class="circle" id="circle1"><img src="../../assets/empty_circle.png"></button>
+                    </div>
+                    <div class="schedules_position">
+                        <div>12:00 - 13:00</div>
+                        <button class="circle" id="circle1"><img src="../../assets/empty_circle.png"></button>
+                    </div>
+                </div>
+
+                <div class="date">14 Novembro</div>
+                <div class="date_options">
+                    <div class="schedules_position">
+                        <div>09:00 - 10:00 </div>
+                        <button class="circle" id="circle1"><img src="../../assets/empty_circle.png"></button>
+                    </div>
+                    <div class="schedules_position">
+                        <div>10:00 - 11:00</div>
+                        <button class="circle" id="circle1"><img src="../../assets/empty_circle.png"></button>
+                    </div>
+                    <div class="schedules_position">
+                        <div>11:00 - 12:00</div>
+                        <button class="circle" id="circle1"><img src="../../assets/empty_circle.png"></button>
+                    </div>
+                    <div class="schedules_position">
+                        <div>12:00 - 13:00</div>
+                        <button class="circle" id="circle1"><img src="../../assets/empty_circle.png"></button>
+                    </div>
+                </div>
+                    <button class="final">Inscrever-se</button>
+            </div>
+        </div>
+        <div class="buttons">
+            <button><img src="../../assets/cazinha_icon.png"></button>
+            <button><img src="../../assets/maozinha_icon.png"></button>
+            <button><img src="../../assets/person_incon.png"></button>
+        </div>
+    </div>
+
+    <script>
+        // Função para resetar todos os botões para a imagem vazia
+        function resetButtons() {
+            document.querySelectorAll('.circle').forEach(button => {
+                const img = button.querySelector('img');
+                img.src = '../../assets/empty_circle.png';  // Define a imagem de todos os botões como "empty_circle.png"
+            });
+        }
+    
+        // Seleciona todos os botões com a classe "circle"
+        document.querySelectorAll('.circle').forEach(button => {
+            // Adiciona um evento de clique para cada botão
+            button.addEventListener('click', function() {
+                const img = this.querySelector('img');
+                
+                // Alterna a imagem entre "empty_circle.png" e "circle_fill.png"
+                if (img.src.includes('circle_fill.png')) {
+                    img.src = '../../assets/empty_circle.png'; // Se for "circle_fill.png", troca para "empty_circle.png"
+                } else {
+                    resetButtons();
+                    img.src = '../../assets/circle_fill.png'; // Se for "empty_circle.png", troca para "circle_fill.png"
+
+                }
+            });
+        });
+    </script>
+    
+    
+
+</body>
+</html>
+
+
