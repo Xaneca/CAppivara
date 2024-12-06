@@ -1,0 +1,126 @@
+/* Reset e configuração geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container principal */
+/* Container com padding */
+.card-container {
+    background-color: white;
+    padding: 20px; /* Adiciona espaço ao redor do conteúdo */
+    width: 85%; /* Limita a largura do card para não ir até as bordas */
+    max-width: 500px; /* Define um tamanho máximo para o card */
+    height: 85%;
+    max-height: 1000px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 24px; /* Rounded corners */
+    text-align: center;
+}
+
+/* Logo */
+ /* General styles for the button */
+ .rounded-button {
+    background-color: red; /* Base color */
+    color: white; /* White text */
+    padding: 3rem 7rem; /* Large button size */
+    font-size: 2rem; /* Larger text */
+    width: 85%; /* Limita a largura do card para não ir até as bordas */
+    max-width: 500px; /* Define um tamanho máximo para o card */
+    border: none; /* Remove default border */
+    border-radius: 24px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: transform 0.2s ease, background-color 0.3s; /* Transição suave */
+    margin: 0px;
+    transform-origin: center; /* Define o centro como ponto de transformação */
+}
+
+/* Center the button container */
+body {
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; 
+    height: 100vh; /* Full viewport height */
+    width: 100%;   /* Certifique-se de ocupar toda a largura */
+    margin: 0; /* Remove default body margin */
+    background-color: #f0f0f0; /* Light background for better contrast */
+}
+
+/* Make the buttons stack vertically */
+.rounded-button {
+    pointer-events: none; /* Bloqueia cliques e interações */
+    cursor: not-allowed; /* Mostra o cursor de bloqueio */
+}
+
+/* Título */
+h2 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: left;
+    max-width: 90%; /* Limita a largura do título */
+    margin-right: auto; /* Garante que o texto não vá para a direita */
+}
+
+/* Descrição */
+.description {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 0px;
+    line-height: 2;
+    text-align: left;
+    max-width: 90%; /* Limita a largura da descrição */
+    margin-right: auto; /* Garante que o texto não vá para a direita */
+}
+
+/* Informações de local e turnos */
+.info p {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 8px;
+    line-height: 2.8;
+    text-align: left;
+    max-width: 90%; /* Limita a largura das informações */
+    margin-right: auto; /* Garante que o texto não vá para a direita */
+}
+
+/* Botão fixado na parte inferior visível da tela */
+/* Botão principal */
+.volunteer-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 24px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    margin-top: 20px; /* Adiciona espaço acima do botão */
+}
+
+/* Alteração de cor ao passar o mouse */
+.volunteer-button:hover {
+    background-color: #218838;
+}
+
+/* Corpo da página */
+body {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: flex-start; /* Alinha o conteúdo no topo */
+    height: 100vh; /* Garante que o corpo ocupe a altura total da tela */
+    width: 100%; /* Garante que ocupe toda a largura */
+    margin: 0; /* Remove margens padrão */
+    background-color: #f0f0f0; /* Fundo claro */
+}
