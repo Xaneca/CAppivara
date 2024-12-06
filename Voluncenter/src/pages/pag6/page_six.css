@@ -28,6 +28,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border-radius: 15px;
     background-color: #6FE06A;
     margin: 0 auto;
     box-shadow: 0 1% 5% rgba(0, 0, 0, 0.1);
@@ -100,7 +101,7 @@ img {
     justify-content: center;
     background-color: #6FE06A;
     border-radius: 15px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1% 5% rgba(0, 0, 0, 0.1);
     margin-left: 25%;
     font-size: 80%;
 }
